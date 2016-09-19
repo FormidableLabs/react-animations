@@ -1,0 +1,52 @@
+import Radium from 'radium';
+import { translate3d, cubicBezier } from '../utils';
+
+const base = {
+  animationTimingFunction: cubicBezier(
+    0.2125,
+    0.610,
+    0.355,
+    1.000
+  ),
+  transform: translate3d(0, 0, 0),
+}
+
+const bounce = {
+  '0%': base,
+  '20%': base,
+  '40%': {
+    animationTimingFunction: cubicBezier(
+      0.755,
+      0.050,
+      0.855,
+      0.060
+    ),
+    transform: translate3d(0, -30, 0),
+  },
+  '43%': {
+    animationTimingFunction: cubicBezier(
+      0.755,
+      0.050,
+      0.855,
+      0.060
+    ),
+    transform: translate3d(0, -30, 0),
+  },
+  '53%': base,
+  '70%': {
+    animationTimingFunction: cubicBezier(
+      0.755,
+      0.050,
+      0.855,
+      0.060
+    ),
+    transform: translate3d(0, -50, 0),
+  },
+  '80%': base,
+  '90%': {
+    transform: translate3d(0, -4, 0),
+  },
+  '100%': base
+}
+
+export default bounce;
