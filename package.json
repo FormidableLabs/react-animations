@@ -1,0 +1,28 @@
+{
+  "name": "react-effects",
+  "version": "0.1.0",
+  "description": "animation library for Radium",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "radium",
+    "css-in-js"
+  ],
+  "author": "Brandon Dail <brandon.dail@formidable.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "radium": "^0.18.1"
+  },
+  "devDependencies": {
+    "builder": "^3.0.0",
+    "builder-radium-component-dev": "^2.1.2"
+  },
+  "dependencies": {
+    "builder-radium-component": "^2.1.2",
+    "builder-victory-component": "^2.5.0"
+  }
+}
