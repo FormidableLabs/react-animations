@@ -23,3 +23,6 @@ export bounceOutDown from './components/bounceOutDown';
 export bounceOutLeft from './components/bounceOutLeft';
 export bounceOutRight from './components/bounceOutRight';
 export bounceOutUp from './components/bounceOutUp';
+
+/* Fading entrances */
+export fadeIn from './components/fadeIn';
