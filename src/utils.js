@@ -1,13 +1,22 @@
 // @flow
 import type { CSSValue } from './types';
 
-
+/**
+ * Composes a variable number of CSS helper functions.
+ * Returns a function that accepts all the original arguments
+ * of the functions it composed. If the original function
+ * accepted multiple arguments, they must be passed as
+ * an array.
+ * @example
+ * const translateXandRotateY = compose(translateX, rotateY);
+ * const cssValue = translateXandRotateY('-5px', '30deg');
+ */
 export const compose = (...funcs: Array<Function>) => {
-  return (...styleArgs) => {
-    const result = funcs.reduce(
-      (acc, func, i) => `${acc} ${func(...styleArgs[i])}`,
-      ''
-    );
+  return (...styleArgs: Array<CSSValue>) => {
+    const result = funcs.reduce((acc, func, i) => {
+      const arg = styleArgs[i];
+      return `${acc} ${Array.isArray(arg) ? func(...arg) : func(arg)}`
+    }, '');
     return result.trim();
   }
 }
@@ -25,6 +34,8 @@ export const translate3d = (
   b: CSSValue,
   c: CSSValue
 ): string => `translate3d(${a}, ${b}, ${c})`
+
+export const translateX = (a: CSSValue): string => `translateX(${a})`
 
 export const scale3d = (
   a: number,
@@ -44,6 +55,8 @@ export const skewXY = (
   x: number,
   y: number
 ): string => `${skewX(x)} ${skewY(y)}`;
+
+export const rotateY = (a: CSSValue) => `rotateY(${a})`;
 
 export const rotate3d = (
   a: number,
