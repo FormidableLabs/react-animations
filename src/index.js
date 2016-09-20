@@ -15,3 +15,4 @@ export bounceIn from './components/bounceIn';
 export bounceInDown from './components/bounceInDown';
 export bounceInLeft from './components/bounceInLeft';
 export bounceInRight from './components/bounceInRight';
+export bounceInUp from './components/bounceInUp';
