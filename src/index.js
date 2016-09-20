@@ -13,3 +13,4 @@ export tada from './components/tada';
 /* Bouncing entrances */
 export bounceIn from './components/bounceIn';
 export bounceInDown from './components/bounceInDown';
+export bounceInLeft from './components/bounceInLeft';
