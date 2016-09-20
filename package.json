@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "flow": "flow",
-    "test": "jest"
+    "test": "jest",
+    "build": "builder run build",
+    "demo": "npm run build && builder run hot"
   },
   "keywords": [
     "react",
