@@ -38,3 +38,4 @@ export fadeInUpBig from './components/fadeInUpBig';
 /* Fading exits */
 export fadeOut from './components/fadeOut';
 export fadeOutDown from './components/fadeOutDown';
+export fadeOutDownBig from './components/fadeOutDownBig';
