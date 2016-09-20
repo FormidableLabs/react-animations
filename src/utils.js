@@ -1,5 +1,12 @@
 // @flow
 
+
+export const compose = (...args: Array<string>): string => {
+  const result: string = args.reduce(
+    (acc, value) => `${acc} ${value}`
+  );
+  return result.trim();
+}
 export const cubicBezier = (
   a: number,
   b: number,
@@ -21,3 +28,10 @@ export const skewY = (deg: number): string =>
 
 export const skewXY = (x: number, y: number): string =>
   `${skewX(x)} ${skewY(y)}`;
+
+export const rotate3d = (
+  a: number,
+  b: number,
+  c: number,
+  d: number
+): string => `rotate3d(${a}, ${b}, ${c}, ${d}deg)`
