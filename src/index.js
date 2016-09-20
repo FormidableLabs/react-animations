@@ -20,3 +20,4 @@ export bounceInUp from './components/bounceInUp';
 /* Bouncing exits */
 export bounceOut from './components/bouceOut';
 export bounceOutDown from './components/bounceOutDown';
+export bounceOutLeft from './components/bounceOutLeft';
