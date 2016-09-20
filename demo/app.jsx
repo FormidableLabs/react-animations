@@ -3,42 +3,37 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Radium, { Style, StyleRoot } from "radium";
-import {
-  bounce,
-  flash,
-  pulse,
-  jello
-} from '../lib';
+import * as animations from '../lib';
 
 
 const styles = {
-  bounce: {
-    animation: 'x 1s ease',
-    animationName: Radium.keyframes(bounce, 'bounce'),
-    transformOrigin: 'center bottom'
+  global: {
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    paddingTop: 200,
   },
-  flash: {
+};
+const animationNames = [];
+
+for (let key in animations) {
+  if (key === 'global') {
+    continue;
+  }
+  animationNames.push(key);
+  const animation = animations[key];
+  styles[key] = {
     animation: 'x 1s ease',
-    animationName: Radium.keyframes(flash, 'flash'),
-  },
-  pulse: {
-    animation: 'x 1s ease',
-    animationName: Radium.keyframes(pulse, 'pulse'),
-  },
-  jello: {
-    animation: 'x 1s ease',
-    animationName: Radium.keyframes(jello, 'jello'),
-  },
+    animationName: Radium.keyframes(animation, key),
+  };
 }
 
 let AnimationDemo = ({ style, animation, selectAnimation }) => (
-  <div>
+  <div style={styles.global}>
     <h1 style={style}>Hello, world</h1>
     <select value={animation} onChange={selectAnimation}>
-    <option value='bounce'>Bounce</option>
-    <option value='flash'>Flash</option>
-    <option value='pulse'>Pulse</option>
-    <option value='jello'>Jello</option>
+    {animationNames.map(name => (
+      <option key={name} value={name}>{name}</option>
+    ))}
   </select>
   </div>
 )
