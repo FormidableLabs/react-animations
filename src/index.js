@@ -40,3 +40,4 @@ export fadeOut from './components/fadeOut';
 export fadeOutDown from './components/fadeOutDown';
 export fadeOutDownBig from './components/fadeOutDownBig';
 export fadeOutLeft from './components/fadeOutLeft';
+export fadeOutLeftBig from './components/fadeOutLeftBig';
