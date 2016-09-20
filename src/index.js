@@ -31,3 +31,4 @@ export fadeInDownBig from './components/fadeInDownBig';
 export fadeInLeft from './components/fadeInLeft';
 export fadeInLeftBig from './components/fadeInLeftBig';
 export fadeInRight from './components/fadeInRight';
+export fadeInRightBig from './components/fadeInRightBig';
