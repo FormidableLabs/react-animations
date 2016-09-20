@@ -4,6 +4,7 @@
   "description": "animation library for Radium",
   "main": "index.js",
   "scripts": {
+    "flow": "flow",
     "test": "jest"
   },
   "keywords": [
@@ -14,12 +15,11 @@
   ],
   "author": "Brandon Dail <brandon.dail@formidable.com>",
   "license": "MIT",
-  "peerDependencies": {
-    "radium": "^0.18.1"
-  },
   "devDependencies": {
     "builder": "^3.0.0",
-    "builder-radium-component-dev": "^2.1.2"
+    "builder-radium-component-dev": "^2.1.2",
+    "flow-bin": "^0.32.0",
+    "radium": "^0.18.1"
   },
   "dependencies": {
     "builder-radium-component": "^2.1.2",

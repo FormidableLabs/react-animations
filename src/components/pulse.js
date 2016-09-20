@@ -1,6 +1,7 @@
 import { scale3d } from '../utils';
+import type { Animation } from '../types';
 
-const pulse = {
+const pulse: Animation = {
   from: {
     transform: scale3d(1, 1, 1),
   },

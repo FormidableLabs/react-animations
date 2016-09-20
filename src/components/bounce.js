@@ -1,7 +1,8 @@
-import Radium from 'radium';
+// @flow
 import { translate3d, cubicBezier } from '../utils';
+import type { Animation, Keyframe } from '../types';
 
-const base = {
+const base: Keyframe = {
   animationTimingFunction: cubicBezier(
     0.2125,
     0.610,
@@ -11,7 +12,7 @@ const base = {
   transform: translate3d(0, 0, 0),
 }
 
-const bounce = {
+const bounce: Animation = {
   '0%': base,
   '20%': base,
   '40%': {

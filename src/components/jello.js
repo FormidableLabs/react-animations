@@ -1,10 +1,11 @@
 import { skewXY } from '../utils';
+import type { Keyframe, Animation } from '../types';
 
-const noSkew = {
+const noSkew: Keyframe = {
   transform: 'none',
 };
 
-const jello = {
+const jello: Animation = {
   from: noSkew,
   '11.1%': noSkew,
   '22.2%': {

@@ -1,0 +1,12 @@
+[ignore]
+<PROJECT_ROOT>/demo/.*
+<PROJECT_ROOT>/lib/.*
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/node_modules/.*
+
+
+[include]
+
+[libs]
+
+[options]
