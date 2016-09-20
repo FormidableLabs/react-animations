@@ -21,3 +21,4 @@ export bounceInUp from './components/bounceInUp';
 export bounceOut from './components/bouceOut';
 export bounceOutDown from './components/bounceOutDown';
 export bounceOutLeft from './components/bounceOutLeft';
+export bounceOutRight from './components/bounceOutRight';
