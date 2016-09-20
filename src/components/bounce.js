@@ -22,7 +22,7 @@ const bounce: Animation = {
       0.855,
       0.060
     ),
-    transform: translate3d(0, -30, 0),
+    transform: translate3d(0, '-30px', 0),
   },
   '43%': {
     animationTimingFunction: cubicBezier(
@@ -31,7 +31,7 @@ const bounce: Animation = {
       0.855,
       0.060
     ),
-    transform: translate3d(0, -30, 0),
+    transform: translate3d(0, '-30px', 0),
   },
   '53%': base,
   '70%': {
@@ -41,11 +41,11 @@ const bounce: Animation = {
       0.855,
       0.060
     ),
-    transform: translate3d(0, -50, 0),
+    transform: translate3d(0, '-50px', 0),
   },
   '80%': base,
   '90%': {
-    transform: translate3d(0, -4, 0),
+    transform: translate3d(0, '-4px', 0),
   },
   '100%': base
 }
