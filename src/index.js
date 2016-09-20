@@ -28,3 +28,4 @@ export bounceOutUp from './components/bounceOutUp';
 export fadeIn from './components/fadeIn';
 export fadeInDown from './components/fadeInDown';
 export fadeInDownBig from './components/fadeInDownBig';
+export fadeInLeft from './components/fadeInLeft';

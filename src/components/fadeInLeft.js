@@ -2,10 +2,10 @@
 import { translate3d } from '../utils';
 import type { Animation } from '../types';
 
-const fadeInDown: Animation = {
+const fadeInLeft: Animation = {
   from: {
     opacity: 0,
-    transform: translate3d(0, '-2000px', 0),
+    transform: translate3d('-100%', 0, 0),
   },
   to: {
     opacity: 1,
@@ -13,4 +13,4 @@ const fadeInDown: Animation = {
   },
 }
 
-export default fadeInDown;
+export default fadeInLeft;
