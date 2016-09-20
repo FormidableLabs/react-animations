@@ -12,6 +12,9 @@ const styles = {
     fontFamily: 'sans-serif',
     paddingTop: 200,
   },
+  swing: {
+    transformOrigin: 'top center'
+  }
 };
 const animationNames = [];
 
@@ -22,6 +25,7 @@ for (let key in animations) {
   animationNames.push(key);
   const animation = animations[key];
   styles[key] = {
+    ...styles[key],
     animation: 'x 1s ease',
     animationName: Radium.keyframes(animation, key),
   };
