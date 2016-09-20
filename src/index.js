@@ -49,3 +49,4 @@ export fadeOutUpBig from './components/fadeOutUpBig';
 /* Flippers */
 export flip from './components/flip';
 export flipInX from './components/flipInX';
+export flipInY from './components/flipInY';
