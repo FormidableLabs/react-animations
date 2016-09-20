@@ -1,3 +1,4 @@
+/* Attention seekers */
 export bounce from './components/bounce';
 export flash from './components/flash';
 export pulse from './components/pulse';
@@ -7,3 +8,4 @@ export headShake from './components/headShake';
 export rubberBand from './components/rubberBand';
 export shake from './components/shake';
 export swing from './components/swing';
+export tada from './components/tada';
