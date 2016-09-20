@@ -1,6 +1,9 @@
 // @flow
+
+export type CSSValue = string | number
+
 export type Keyframe = {
-  [property: string]: string | number,
+  [property: string]: CSSValue,
 }
 
 export type Animation = {
