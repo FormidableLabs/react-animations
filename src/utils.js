@@ -64,3 +64,7 @@ export const rotate3d = (
   c: number,
   d: number
 ): string => `rotate3d(${a}, ${b}, ${c}, ${d}deg)`
+
+export const perspective = (
+  a: CSSValue
+): string => `perspective(${a})`;

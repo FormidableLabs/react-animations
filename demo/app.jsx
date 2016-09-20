@@ -14,7 +14,10 @@ const styles = {
   },
   swing: {
     transformOrigin: 'top center'
-  }
+  },
+  flip: {
+    backfaceVisibilty: 'visible',
+  },
 };
 const animationNames = [];
 
