@@ -34,3 +34,6 @@ export fadeInRight from './components/fadeInRight';
 export fadeInRightBig from './components/fadeInRightBig';
 export fadeInUp from './components/fadeInUp';
 export fadeInUpBig from './components/fadeInUpBig';
+
+/* Fading exits */
+export fadeOut from './components/fadeOut';
