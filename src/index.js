@@ -9,3 +9,6 @@ export rubberBand from './components/rubberBand';
 export shake from './components/shake';
 export swing from './components/swing';
 export tada from './components/tada';
+
+/* Bouncing entrances */
+export bounceIn from './components/bounceIn';
