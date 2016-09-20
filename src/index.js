@@ -6,3 +6,4 @@ export wobble from './components/wobble';
 export headShake from './components/headShake';
 export rubberBand from './components/rubberBand';
 export shake from './components/shake';
+export swing from './components/swing';
