@@ -14,3 +14,4 @@ export tada from './components/tada';
 export bounceIn from './components/bounceIn';
 export bounceInDown from './components/bounceInDown';
 export bounceInLeft from './components/bounceInLeft';
+export bounceInRight from './components/bounceInRight';
