@@ -70,3 +70,6 @@ export rotateOutDownLeft from './components/rotateOutDownLeft.js';
 export rotateOutDownRight from './components/rotateOutDownRight.js';
 export rotateOutUpLeft from './components/rotateOutUpLeft.js';
 export rotateOutUpRight from './components/rotateOutUpRight.js';
+
+/* Sliding entrances */
+export slideInDown from './components/slideInDown';
