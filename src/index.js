@@ -89,3 +89,4 @@ export slideOutUp from './components/slideOutUp';
 /* Specials */
 export hinge from './components/hinge';
 export rollIn from './components/rollIn';
+export rollOut from './components/rollOut';
