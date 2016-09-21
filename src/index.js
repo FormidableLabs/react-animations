@@ -67,3 +67,4 @@ export rotateInUpRight from './components/rotateInUpRight';
 /* Rotation exits */
 export rotateOut from './components/rotateOut.js';
 export rotateOutDownLeft from './components/rotateOutDownLeft.js';
+export rotateOutDownRight from './components/rotateOutDownRight.js';
