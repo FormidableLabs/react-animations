@@ -12,7 +12,7 @@ import type { CSSValue } from './types';
  * const cssValue = translateXandRotateY('-5px', '30deg');
  */
 export const compose = (...funcs: Array<Function>) => {
-  return (...styleArgs: Array<CSSValue>) => {
+  return (...styleArgs: Array<CSSValue | Array<CSSValue>>) => {
     const result = funcs.reduce((acc, func, i) => {
       const arg = styleArgs[i];
       return `${acc} ${Array.isArray(arg) ? func(...arg) : func(arg)}`
