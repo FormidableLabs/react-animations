@@ -90,3 +90,6 @@ export slideOutUp from './components/slideOutUp';
 export hinge from './components/hinge';
 export rollIn from './components/rollIn';
 export rollOut from './components/rollOut';
+
+/* Zooming entrances */
+export zoomIn from './components/zoomIn';
