@@ -23,7 +23,12 @@ export default function merge(a: Animation, b: Animation): Animation {
     const target: Keyframe = merged[frame] || (merged[frame] = {});
     for (let cssValue: string in sourceFrame) {
       if (cssValue === 'transform' && targetFrame && targetFrame[cssValue]) {
-        target[cssValue] = `${sourceFrame[cssValue]} ${targetFrame[cssValue]}`
+        var transforms = [sourceFrame[cssValue], targetFrame[cssValue]]
+        target[cssValue] = transforms.filter(
+          transform => transform !== 'none'
+        )
+        .join(' ')
+        .trim();
       } else {
         target[cssValue] = sourceFrame[cssValue]
       }

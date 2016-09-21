@@ -37,7 +37,8 @@ let aphroditeStyle = {
 }
 
 
-animations.tadaFlip = merge(animations.tada, animations.flip)
+animations.tadaFlip = merge(animations.tada, animations.flip);
+animations.jelloFadeDown = merge(animations.fadeInDown, animations.jello);
 
 const animationNames = [];
 
