@@ -53,6 +53,9 @@ export flipInY from './components/flipInY';
 export flipOutX from './components/flipOutX';
 export flipOutY from './components/flipOutY';
 
-/* lightspeed */
+/* Lightspeed */
 export lightSpeedIn from './components/lightSpeedIn';
 export lightSpeedOut from './components/lightSpeedOut';
+
+/* Rotating entrances */
+export rotateIn from './components/rotateIn';
