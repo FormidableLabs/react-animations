@@ -52,3 +52,6 @@ export flipInX from './components/flipInX';
 export flipInY from './components/flipInY';
 export flipOutX from './components/flipOutX';
 export flipOutY from './components/flipOutY';
+
+/* lightspeed */
+export lightSpeedIn from './components/lightSpeedIn';
