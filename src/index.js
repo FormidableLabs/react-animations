@@ -1,3 +1,6 @@
+/* Utilities */
+export merge from './merge';
+
 /* Attention seekers */
 export bounce from './components/bounce';
 export flash from './components/flash';

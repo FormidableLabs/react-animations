@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Radium, { Style, StyleRoot } from "radium";
 import { StyleSheet, css } from 'aphrodite';
 import * as animations from '../lib';
+import merge from '../lib/merge';
 
 
 const styles = {
@@ -35,6 +36,8 @@ let aphroditeStyle = {
   },
 }
 
+
+animations.tadaFlip = merge(animations.tada, animations.flip)
 
 const animationNames = [];
 
