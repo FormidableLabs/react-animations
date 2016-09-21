@@ -84,3 +84,4 @@ export slideInUp from './components/slideInUp';
 export slideOutDown from './components/slideOutDown';
 export slideOutLeft from './components/slideOutLeft';
 export slideOutRight from './components/slideOutRight';
+export slideOutUp from './components/slideOutUp';
