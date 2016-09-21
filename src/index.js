@@ -51,3 +51,4 @@ export flip from './components/flip';
 export flipInX from './components/flipInX';
 export flipInY from './components/flipInY';
 export flipOutX from './components/flipOutX';
+export flipOutY from './components/flipOutY';
