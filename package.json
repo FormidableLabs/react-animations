@@ -18,6 +18,7 @@
   "author": "Brandon Dail <brandon.dail@formidable.com>",
   "license": "MIT",
   "devDependencies": {
+    "aphrodite": "^0.5.0",
     "builder": "^3.0.0",
     "builder-radium-component-dev": "^2.1.2",
     "flow-bin": "^0.32.0",
