@@ -75,3 +75,4 @@ export rotateOutUpRight from './components/rotateOutUpRight.js';
 export slideInDown from './components/slideInDown';
 export slideInLeft from './components/slideInLeft';
 export slideInRight from './components/slideInRight';
+export slideInUp from './components/slideInUp';
