@@ -85,3 +85,6 @@ export slideOutDown from './components/slideOutDown';
 export slideOutLeft from './components/slideOutLeft';
 export slideOutRight from './components/slideOutRight';
 export slideOutUp from './components/slideOutUp';
+
+/* Specials */
+export hinge from './components/hinge';
