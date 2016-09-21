@@ -62,3 +62,4 @@ export rotateIn from './components/rotateIn';
 export rotateInDownLeft from './components/rotateInDownLeft';
 export rotateInDownRight from './components/rotateInDownRight';
 export rotateInUpLeft from './components/rotateInUpLeft';
+export rotateInUpRight from './components/rotateInUpRight';
