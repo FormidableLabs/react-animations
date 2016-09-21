@@ -60,3 +60,4 @@ export lightSpeedOut from './components/lightSpeedOut';
 /* Rotating entrances */
 export rotateIn from './components/rotateIn';
 export rotateInDownLeft from './components/rotateInDownLeft';
+export rotateInDownRight from './components/rotateInDownRight';
