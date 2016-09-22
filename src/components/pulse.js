@@ -1,3 +1,4 @@
+// @flow
 import { scale3d } from '../utils';
 import type { Animation } from '../types';
 

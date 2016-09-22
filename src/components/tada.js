@@ -1,3 +1,4 @@
+// @flow
 import { compose, scale3d, rotate3d } from '../utils';
 import type { Keyframe, Animation } from '../types';
 
@@ -28,7 +29,7 @@ const scaleUpNegativeAngle: Keyframe = {
   ),
 };
 
-const tada = {
+const tada: Animation = {
   from: noScale,
   '10%': scaleDownNegativeAngle,
   '20%': scaleDownNegativeAngle,

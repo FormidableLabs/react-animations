@@ -1,3 +1,4 @@
+// @flow
 import { skewXY } from '../utils';
 import type { Keyframe, Animation } from '../types';
 

@@ -1,5 +1,6 @@
+// @flow
 import { translate3d } from '../utils';
-import type { Animation } from '../utils';
+import type { Animation } from '../types';
 
 const bounceOutRight: Animation = {
   '20%': {

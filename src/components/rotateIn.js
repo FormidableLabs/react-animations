@@ -1,7 +1,8 @@
+// @flow
 import { rotate3d } from '../utils';
 import type { Animation } from '../types';
 
-const rotateIn = {
+const rotateIn: Animation = {
   from: {
     transformOrigin: 'center',
     transform: rotate3d(0, 0, 1, -200),

@@ -1,6 +1,8 @@
+// @flow
 import { translate3d } from '../utils';
+import type { Animation } from '../types';
 
-const bounceOutLeft = {
+const bounceOutLeft: Animation = {
   '20%': {
     opacity: 1,
     transform: translate3d('20px', 0, 0),

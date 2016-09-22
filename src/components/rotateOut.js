@@ -2,7 +2,7 @@
 import { rotate3d } from '../utils';
 import type { Animation } from '../types';
 
-const rotateOut = {
+const rotateOut: Animation = {
   from: {
     transformOrigin: 'center',
     opacity: 1,

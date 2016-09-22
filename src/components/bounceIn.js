@@ -1,3 +1,4 @@
+// @flow
 import { cubicBezier, scale3d } from '../utils.js';
 import type { Keyframe, Animation } from '../types';
 
@@ -10,7 +11,7 @@ const timing: Keyframe = {
   ),
 }
 
-const bounceIn = {
+const bounceIn: Animation = {
   from: timing,
   '0%': {
     opacity: 0,

@@ -1,3 +1,4 @@
+// @flow
 import { compose, translate3d, skewX } from '../utils.js';
 import type { Keyframe, Animation } from '../types';
 
@@ -11,7 +12,7 @@ const easeIn: Keyframe = {
   animationTimingFunction: 'ease-out',
 };
 
-const lightSpeedIn = {
+const lightSpeedIn: Animation = {
   from: {
     ...easeIn,
     opacity: 0,

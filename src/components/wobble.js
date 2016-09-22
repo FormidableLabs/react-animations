@@ -1,3 +1,4 @@
+// @flow
 import { compose, translate3d, rotate3d } from '../utils';
 import type { Animation, Keyframe } from '../types';
 
@@ -7,7 +8,7 @@ const noWobble: Keyframe = {
   transform: 'none',
 }
 
-const wobble = {
+const wobble: Animation = {
   from: noWobble,
   '15%': {
     transform: translateAndRotate(

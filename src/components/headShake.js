@@ -1,3 +1,4 @@
+// @flow
 import { compose, translateX, rotateY } from '../utils.js';
 import type { Animation, Keyframe } from '../types';
 
@@ -7,7 +8,7 @@ const noShake: Keyframe = {
   transform: translateX(0),
 };
 
-const headShake = {
+const headShake: Animation = {
   '0%': noShake,
   '6.5%': {
     transform: translateAndRotate('-6px', '-9deg'),

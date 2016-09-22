@@ -1,3 +1,4 @@
+// @flow
 import { translate3d } from '../utils';
 import type { Animation, Keyframe } from '../types';
 
@@ -13,7 +14,7 @@ const upShake: Keyframe = {
   transform: translate3d('10px', 0, 0),
 };
 
-const shake = {
+const shake: Animation = {
   from: noShake,
   '10%': downShake,
   '20%': upShake,

@@ -1,7 +1,8 @@
+// @flow
 import { rotate3d } from '../utils';
 import type { Animation } from '../types';
 
-const swing = {
+const swing: Animation = {
   '20%': {
     transform: rotate3d(0, 0, 1, 15),
   },

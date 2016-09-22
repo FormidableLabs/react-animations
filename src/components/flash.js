@@ -1,3 +1,4 @@
+// @flow
 import type { Keyframe, Animation } from '../types';
 
 const visible: Keyframe = {

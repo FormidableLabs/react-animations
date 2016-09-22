@@ -2,7 +2,7 @@
 import { rotate3d } from '../utils';
 import type { Animation } from '../types';
 
-const rotateOutDownLeft = {
+const rotateOutDownLeft: Animation = {
   from: {
     transformOrigin: 'left bottom',
     opacity: 1,

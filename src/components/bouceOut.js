@@ -1,6 +1,8 @@
+// @flow
 import { scale3d } from '../utils';
+import type { Animation } from '../types';
 
-const bounceOut = {
+const bounceOut: Animation = {
   '20%': {
     transform: scale3d(0.9, 0.9, 0.9),
   },
