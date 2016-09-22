@@ -95,3 +95,4 @@ export rollOut from './components/rollOut';
 export zoomIn from './components/zoomIn';
 export zoomInDown from './components/zoomInDown';
 export zoomInLeft from './components/zoomInLeft';
+export zoomInRight from './components/zoomInRight';
