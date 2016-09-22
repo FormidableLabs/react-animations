@@ -31,7 +31,7 @@ const zoomInLeft: Animation = {
     ),
     animationTimingFunction: cubicBezier(
       0.175,
-      0.855,
+      0.885,
       0.320,
       1
     ),

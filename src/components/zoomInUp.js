@@ -9,12 +9,12 @@ import type { Animation } from '../types';
 
 const scaleAndTranslate = compose(scale3d, translate3d);
 
-const zoomInDown: Animation = {
+const zoomInUp: Animation = {
   from: {
     opacity: 0,
     transform: scaleAndTranslate(
       [0.1, 0.1, 0.1],
-      [0, '-1000px', 0]
+      [0, '1000px', 0]
     ),
     animationTimingFunction: cubicBezier(
       0.550,
@@ -27,7 +27,7 @@ const zoomInDown: Animation = {
     opacity: 1,
     transform: scaleAndTranslate(
       [0.475, 0.475, 0.475],
-      [0, '60px', 0]
+      [0, '-60px', 0]
     ),
     animationTimingFunction: cubicBezier(
       0.175,
@@ -38,4 +38,4 @@ const zoomInDown: Animation = {
   },
 };
 
-export default zoomInDown;
+export default zoomInUp;
