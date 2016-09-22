@@ -102,3 +102,4 @@ export zoomInUp from './components/zoomInUp';
 export zoomOut from './components/zoomOut';
 export zoomOutDown from './components/zoomOutDown';
 export zoomOutLeft from './components/zoomOutLeft';
+export zoomOutRight from './components/zoomOutRight';
