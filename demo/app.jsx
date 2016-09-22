@@ -36,12 +36,10 @@ let aphroditeStyle = {
   },
 }
 
-window.animations = animations
-
-
 animations.tadaFlip = merge(animations.tada, animations.flip);
 animations.jelloFadeDown = merge(animations.fadeInDown, animations.jello);
 animations.flashSwing = merge(animations.jello, animations.bounce);
+animations.zoomWobble = merge(animations.wobble, animations.zoomOut);
 
 const animationNames = [];
 
