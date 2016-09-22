@@ -41,12 +41,12 @@ export default function merge(
   // We merge each frame into a new object and return it
   const merged: Animation = {};
 
-  const normalizedPrimary: Animation = cacheNormalizedFrames(
+  const normalizedPrimary: Animation = normalizeFrames(
     primary,
     normalizedFrames
   );
 
-  const normalizedSecondary: Animation = cacheNormalizedFrames(
+  const normalizedSecondary: Animation = normalizeFrames(
     secondary,
     normalizedFrames
   );
@@ -171,7 +171,7 @@ function getDefined(primary: CSSValue, secondary: CSSValue): CSSValue {
  * frames.
  * @private
  */
-function cacheNormalizedFrames(source: Animation, cache: FrameMap): Animation {
+function normalizeFrames(source: Animation, cache: FrameMap): Animation {
   const normalized: Animation = {};
   for (let frame in source) {
     const normalizedFrame = defaultNormalizedFrames[frame] || (Math.round(
