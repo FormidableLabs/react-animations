@@ -100,3 +100,4 @@ export zoomInUp from './components/zoomInUp';
 
 /* Zooming exits */
 export zoomOut from './components/zoomOut';
+export zoomOutDown from './components/zoomOutDown';
