@@ -43,6 +43,8 @@ export const scale3d = (
   c: number
 ): string => `scale3d(${a}, ${b}, ${c})`;
 
+export const scale = (a: number) => `scale(${a})`;
+
 export const skewX = (
   deg: number
 ): string => `skewX(${deg}deg)`;
