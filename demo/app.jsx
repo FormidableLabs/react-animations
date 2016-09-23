@@ -3,16 +3,61 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Radium, { Style, StyleRoot } from "radium";
-import { StyleSheet, css } from 'aphrodite';
 import * as animations from '../lib';
 import merge from '../lib/merge';
 
+import Demo from './description';
 
 const styles = {
   global: {
     textAlign: 'center',
-    fontFamily: 'sans-serif',
     paddingTop: 200,
+    body: {
+      backgroundColor: 'white',
+      color: 'white',
+      fontFamily: "Whitney SSm A, Whitney SSm B, Helvetica Neue, Helvetica, Arial, sans-serif",
+      lineHeight: 1.5,
+      margin: 0,
+      transform: 'translate3d(0, 0, 0)',
+   },
+   p: {
+     margin: 0
+   },
+   select: {
+     border: 'none',
+     height: 35,
+     fontSize: 15,
+     fontFamily: 'inherit',
+     width: 155,
+     fontWeight: 'bold',
+   },
+   input: {
+     height: 35,
+     border: 'none',
+     padding: '0px 5px',
+     borderRadius: 6,
+     fontFamily: 'inherit'
+   },
+   button: {
+     outline: 'none',
+     backgroundColor: 'white',
+     height: 35,
+     border: 'none',
+     padding: '0px 10px',
+     borderRadius: 6,
+     fontFamily: 'inherit'
+   },
+   label: {
+     position: 'absolute',
+     bottom: 0,
+     fontSize: 10,
+   },
+  },
+  container: {
+    position: 'relative',
+    margin: 15,
+    height: 60,
+    display: 'inline-block',
   },
   swing: {
     transformOrigin: 'top center'
@@ -22,75 +67,24 @@ const styles = {
   },
 };
 
-let aphroditeStyle = {
-  global: {
-    textAlign: 'center',
-    fontFamily: 'sans-serif',
-    paddingTop: 200,
-  },
-  swing: {
-    transformOrigin: 'top center'
-  },
-  flip: {
-    backfaceVisibilty: 'visible',
-  },
-}
-
-animations.tadaFlip = merge(animations.tada, animations.flip);
-animations.jelloFadeDown = merge(animations.fadeInDown, animations.jello);
-animations.flashSwing = merge(animations.jello, animations.bounce);
-animations.zoomWobble = merge(animations.wobble, animations.zoomOut);
-animations.flashHinge = merge(animations.hinge, animations.flash);
-
 const animationNames = [];
 
 for (let key in animations) {
-  if (key === 'global') {
+  if (
+    key === 'global' ||
+    key === 'merge' ||
+    key === 'container'
+  ) {
     continue;
   }
   animationNames.push(key);
   const animation = animations[key];
   styles[key] = {
     ...styles[key],
-    animation: 'x 1s ease',
+    animation: 'x',
     animationName: Radium.keyframes(animation, key),
   };
-  aphroditeStyle[key] = {
-    ...aphroditeStyle[key],
-    animationName: animation,
-    animationDuration: '1s',
-    animationTimingFunction: 'ease',
-  };
 }
-
-aphroditeStyle = StyleSheet.create(aphroditeStyle)
-
-let AnimationRadiumDemo = ({ style, animation, selectAnimation }) => (
-  <div style={styles.global}>
-    <span>Using Radium</span>
-    <h1 style={style}>Hello, world</h1>
-    <select value={animation} onChange={selectAnimation}>
-    {animationNames.map(name => (
-      <option key={name} value={name}>{name}</option>
-    ))}
-  </select>
-  </div>
-)
-
-AnimationRadiumDemo = Radium(AnimationRadiumDemo);
-
-
-let AnimationAphroditeDemo = ({ style, animation, selectAnimation }) => (
-  <div className={css(style.global)}>
-    <span>Using Aphrodite</span>
-    <h1 className={css(style[animation])}>Hello, world</h1>
-    <select value={animation} onChange={selectAnimation}>
-    {animationNames.map(name => (
-      <option key={name} value={name}>{name}</option>
-    ))}
-  </select>
-  </div>
-)
 
 class App extends React.Component {
 
@@ -100,56 +94,74 @@ class App extends React.Component {
       animation: 'bounce',
       library: 'Radium',
     }
+    this.duration = 1;
     this.selectAnimation = this.selectAnimation.bind(this);
+    this.onDurationChange = this.onDurationChange.bind(this);
+    this.triggerAnimation = this.triggerAnimation.bind(this);
   }
 
-  selectAnimation(event) {
-    console.log('selectAnimation')
-    this.setState({ animation: event.target.value })
+  selectAnimation({ target }) {
+    this.setState({ animation: target.value });
   }
 
-  onLibraryChange(library) {
-    console.log(library)
-    this.setState({ library })
+  onDurationChange({ target }) {
+    // Track duration outside of state, as we don't
+    // want duration changes to trigger a render.
+    this.duration = parseFloat(target.value);
+  }
+
+  triggerAnimation() {
+    const { animation } = this.state;
+    this.setState({ animation: '' }, () => {
+      this.setState({ animation })
+    })
   }
 
   render() {
-    const { animation, library } = this.state;
-    const style = styles[animation];
-    console.log(animation, aphroditeStyle);
-    let demo;
-    if (library === 'Aphrodite') {
-      demo = (
-        <div>
-          <AnimationAphroditeDemo
-            selectAnimation={this.selectAnimation}
-            animation={animation}
-            style={aphroditeStyle}
-          />
-        </div>
-      )
-    } else {
-      demo = (
-        <StyleRoot>
-          <AnimationRadiumDemo
-            selectAnimation={this.selectAnimation}
-            animation={animation}
-            style={style} />
-        </StyleRoot>
-      )
-    }
+    const { animation } = this.state;
+    console.log('render')
     return (
-      <div>
-        {demo}
-        <button
-          onClick={this.onLibraryChange.bind(this, 'Radium')}>
-            Use Radium
-        </button>
-        <button
-          onClick={this.onLibraryChange.bind(this, 'Aphrodite')}>
-            Use Aphrodite
-        </button>
-      </div>
+      <StyleRoot>
+        <div style={styles.global}>
+        <Style rules={styles.global} />
+          <Demo
+            duration={this.duration}
+            animation={animation}
+            styles={styles}
+          />
+        <div style={styles.container}>
+        <label htmlFor='animation'>
+          Animation
+        </label>
+        <select
+          id='animation'
+          value={animation}
+          onChange={this.selectAnimation}>
+            {animationNames.map(name => (
+              <option key={name} value={name}>{name}</option>
+            ))}
+        </select>
+        </div>
+        <div style={styles.container}>
+        <label htmlFor='duration'>
+          Duration
+        </label>
+        <input
+          value={this.state.duration}
+          onChange={this.onDurationChange}
+          id='duration'
+          style={styles.duration}
+          type='number'
+          min='1'
+          max='10'/>
+        </div>
+        <div style={styles.container}>
+          <button onClick={this.triggerAnimation} >
+            Animate
+          </button>
+        </div>
+        </div>
+      </StyleRoot>
     )
   }
 }
