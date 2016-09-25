@@ -21,9 +21,11 @@ const styles = {
       transform: 'translate3d(0, 0, 0)',
    },
    p: {
-     margin: 0
+     margin: 0,
+     color: '#242121'
    },
    select: {
+     backgroundColor: '#e7e5e3',
      border: 'none',
      height: 35,
      fontSize: 15,
@@ -32,6 +34,7 @@ const styles = {
      fontWeight: 'bold',
    },
    input: {
+     backgroundColor: '#e7e5e3',
      height: 35,
      border: 'none',
      padding: '0px 5px',
@@ -39,6 +42,7 @@ const styles = {
      fontFamily: 'inherit'
    },
    button: {
+     backgroundColor: '#e7e5e3',
      outline: 'none',
      backgroundColor: 'white',
      height: 35,

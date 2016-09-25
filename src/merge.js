@@ -26,7 +26,7 @@ const defaultNormalizedFrames: FrameMap = {
  * that are clearly opposites (fadeIn and fadeOut).
  *
  * @example
- * import { merge, tada, flip } from 'react-effects';
+ * import { merge, tada, flip } from 'react-animations';
  * const tadaFlip = merge(tada, flip);
  */
 export default function merge(

@@ -1,6 +1,3 @@
-/* Utilities */
-export merge from './merge';
-
 /* Attention seekers */
 export bounce from './components/bounce';
 export flash from './components/flash';
@@ -20,7 +17,7 @@ export bounceInLeft from './components/bounceInLeft';
 export bounceInRight from './components/bounceInRight';
 export bounceInUp from './components/bounceInUp';
 
-/* Bouncing exits */
+/* Bouncing  exits */
 export bounceOut from './components/bouceOut';
 export bounceOutDown from './components/bounceOutDown';
 export bounceOutLeft from './components/bounceOutLeft';

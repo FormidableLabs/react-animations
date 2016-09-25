@@ -10,6 +10,7 @@ const Demo = ({ styles, duration, animation }) => {
     width: 500,
     fontSize: 60,
     margin: '30px auto',
+    color: '#c43a31'
   };
   const descriptionStyle = {
     ...styles.fadeInUp,
@@ -17,7 +18,8 @@ const Demo = ({ styles, duration, animation }) => {
     fontSize: 16,
   }
 
-  // I'm so sorry.
+  // Render a bunch of empty spans so that each keyframe
+  // will be available in the DOM.
   let dummies = Object.keys(styles).map(
     key => <span key={key} style={styles[key]} />
   );
@@ -25,8 +27,9 @@ const Demo = ({ styles, duration, animation }) => {
   return (
     <div>
     {dummies}
-    <h1 key={animation} style={headerStyle}>react-effects</h1>
-    <span style={descriptionStyle}>A collection of animations for CSS-in-JS libraries </span>
+    <h1 key={animation} style={headerStyle}>react-animations</h1>
+    <p style={descriptionStyle}>A collection of animations for CSS-in-JS libraries </p>
+    <a href='https://github.com/FormidableLabs/react-animations'>View on Github</a>
     </div>
   )
 }

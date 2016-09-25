@@ -1,10 +1,10 @@
-# react-effects
+# react-animations
 
 
-A collection of animations for CSS-in-JS libraries. react-effects implements all animations from [animate.css](https://daneden.github.io/animate.css/), allowing you to use them in any project that uses JavaScript for style management.
+A collection of animations for CSS-in-JS libraries. react-animations implements all animations from [animate.css](https://daneden.github.io/animate.css/), allowing you to use them in any project that uses JavaScript for style management.
 ### Usage
 
-These animations can be used with Radium, Aphordite, or any other CSS-in-JS library--with or without React. Just import the animation from the package
+These animations can be used with Radium, Aphordite, or any other CSS-in-JS library that supports using objects to define keyframes. Just import the animation from the package
 and include it in your style definition. Below are some examples using a few
 popular styling libraries.
 
@@ -12,7 +12,7 @@ popular styling libraries.
 ### Radium
 
 ```js
-import { bounce } from 'react-effects';
+import { bounce } from 'react-animations';
 import Radium from 'radium';
 
 const styles = {
@@ -26,7 +26,7 @@ const styles = {
 ### Aphrodite
 
 ```js
-import { bounce } from 'react-effects';
+import { bounce } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
@@ -120,11 +120,11 @@ Below is a list of all available animations
 
 ## Merge
 
-react-effects also exports a `merge` function that takes two animations and returns a new animation that combines the transforms from both. This is experimental and wont work (well) with animations that have conflicting transforms, such as `fadeIn` and `fadeOut`.
+react-animations also exports a `merge` function that takes two animations and returns a new animation that combines the transforms from both. This is experimental and wont work (well) with animations that have conflicting transforms, such as `fadeIn` and `fadeOut`. The merged animation can be used just like any of the imported animations.
 
 
 ```js
 
-import { merge, tada, flip } from 'react-effects';
+import { merge, tada, flip } from 'react-animations';
 const tadaFlip = merge(tada, flip);
 ```
