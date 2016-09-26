@@ -1,1 +1,1 @@
-web: npm run demo:prod
+web: npm run demo

@@ -14,8 +14,7 @@
     "build-dist-min": "NODE_ENV=production webpack",
     "prepublish": "npm run test && npm run build && npm run dist",
     "clean-dist": "rimraf dist && mkdir dist",
-    "demo": "webpack-dev-server --hot --inline --port 3000 --config demo/webpack.config.js --content-base demo",
-    "demo:prod": "webpack-dev-server --hot --inline --port 80 --config demo/webpack.config.js --content-base demo"
+    "demo": "node demo/server"
   },
   "keywords": [
     "react",
