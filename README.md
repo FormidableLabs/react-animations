@@ -1,15 +1,26 @@
 # react-animations
 
 
-A collection of animations for CSS-in-JS libraries. react-animations implements all animations from [animate.css](https://daneden.github.io/animate.css/), allowing you to use them in any project that uses JavaScript for style management. [Check out the interactive demo](http://react-animations.herokuapp.com/).
+A collection of animations that can be used with any inline style library that supports using objects to define keyframe animations, such as Radium or Aphrodite. React-animations implements all animations from [animate.css](https://daneden.github.io/animate.css/).
+
+[Check out the interactive demo](http://react-animations.herokuapp.com/).
+
 ### Usage
 
-These animations can be used with Radium, Aphordite, or any other CSS-in-JS library that supports using objects to define keyframes. Just import the animation from the package
-and include it in your style definition. Below are some examples using a few
-popular styling libraries.
+You can import each animation directly from the main package
+
+```js
+import { fadeIn } from 'react-animations'
+```
+
+or you can import a specific animation directly
+
+```js
+import fadeIn from 'react-animations/fadeIn'
+```
 
 
-### Radium
+### Usage with Radium
 
 ```js
 import { bounce } from 'react-animations';
@@ -23,7 +34,7 @@ const styles = {
 }
 ```
 
-### Aphrodite
+### Usage with Aphrodite
 
 ```js
 import { bounce } from 'react-animations';
@@ -42,81 +53,157 @@ const styles = StyleSheet.create({
 Below is a list of all available animations
 
 `bouceOut`
+
 `bounce`
+
 `bounceIn`
+
 `bounceInDown`
+
 `bounceInLeft`
+
 `bounceInRight`
+
 `bounceInUp`
+
 `bounceOutDown`
+
 `bounceOutLeft`
+
 `bounceOutRight`
+
 `bounceOutUp`
+
 `fadeIn`
+
 `fadeInDown`
+
 `fadeInDownBig`
+
 `fadeInLeft`
+
 `fadeInLeftBig`
+
 `fadeInRight`
+
 `fadeInRightBig`
+
 `fadeInUp`
+
 `fadeInUpBig`
+
 `fadeOut`
+
 `fadeOutDown`
+
 `fadeOutDownBig`
+
 `fadeOutLeft`
+
 `fadeOutLeftBig`
+
 `fadeOutRight`
+
 `fadeOutRightBig`
+
 `fadeOutUp`
+
 `fadeOutUpBig`
+
 `flash`
+
 `flip`
+
 `flipInX`
+
 `flipInY`
+
 `flipOutX`
+
 `flipOutY`
+
 `headShake`
+
 `hinge`
+
 `jello`
+
 `lightSpeedIn`
+
 `lightSpeedOut`
+
 `pulse`
+
 `rollIn`
+
 `rollOut`
+
 `rotateIn`
+
 `rotateInDownLeft`
+
 `rotateInDownRight`
+
 `rotateInUpLeft`
+
 `rotateInUpRight`
+
 `rotateOut`
+
 `rotateOutDownLeft`
+
 `rotateOutDownRight`
+
 `rotateOutUpLeft`
+
 `rotateOutUpRight`
+
 `rubberBand`
+
 `shake`
+
 `slideInDown`
+
 `slideInLeft`
+
 `slideInRight`
+
 `slideInUp`
+
 `slideOutDown`
+
 `slideOutLeft`
+
 `slideOutRight`
+
 `slideOutUp`
+
 `swing`
+
 `tada`
+
 `wobble`
+
 `zoomIn`
+
 `zoomInDown`
+
 `zoomInLeft`
+
 `zoomInRight`
+
 `zoomInUp`
+
 `zoomOut`
+
 `zoomOutDown`
+
 `zoomOutLeft`
+
 `zoomOutRight`
+
 `zoomOutUp`
+
 
 ## Merge
 
