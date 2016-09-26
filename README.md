@@ -1,7 +1,7 @@
 # react-animations
 
 
-A collection of animations for CSS-in-JS libraries. react-animations implements all animations from [animate.css](https://daneden.github.io/animate.css/), allowing you to use them in any project that uses JavaScript for style management.
+A collection of animations for CSS-in-JS libraries. react-animations implements all animations from [animate.css](https://daneden.github.io/animate.css/), allowing you to use them in any project that uses JavaScript for style management. [Check out the interactive demo](http://react-animations.herokuapp.com/).
 ### Usage
 
 These animations can be used with Radium, Aphordite, or any other CSS-in-JS library that supports using objects to define keyframes. Just import the animation from the package
