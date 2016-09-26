@@ -15,11 +15,11 @@ export const compose = (...funcs: Array<Function>) => {
   return (...styleArgs: Array<CSSValue | Array<CSSValue>>) => {
     const result = funcs.reduce((acc, func, i) => {
       const arg = styleArgs[i];
-      return `${acc} ${Array.isArray(arg) ? func(...arg) : func(arg)}`
+      return `${acc} ${Array.isArray(arg) ? func(...arg) : func(arg)}`;
     }, '');
     return result.trim();
-  }
-}
+  };
+};
 
 
 export const cubicBezier = (
@@ -33,9 +33,11 @@ export const translate3d = (
   a: CSSValue,
   b: CSSValue,
   c: CSSValue
-): string => `translate3d(${a}, ${b}, ${c})`
+): string => `translate3d(${a}, ${b}, ${c})`;
 
-export const translateX = (a: CSSValue): string => `translateX(${a})`
+export const translateX = (
+  a: CSSValue
+): string => `translateX(${a})`;
 
 export const scale3d = (
   a: number,
@@ -43,7 +45,9 @@ export const scale3d = (
   c: number
 ): string => `scale3d(${a}, ${b}, ${c})`;
 
-export const scale = (a: number) => `scale(${a})`;
+export const scale = (
+  a: number
+) => `scale(${a})`;
 
 export const skewX = (
   deg: number
@@ -58,14 +62,16 @@ export const skewXY = (
   y: number
 ): string => `${skewX(x)} ${skewY(y)}`;
 
-export const rotateY = (a: CSSValue) => `rotateY(${a})`;
+export const rotateY = (
+  a: CSSValue
+) => `rotateY(${a})`;
 
 export const rotate3d = (
   a: number,
   b: number,
   c: number,
   d: number
-): string => `rotate3d(${a}, ${b}, ${c}, ${d}deg)`
+): string => `rotate3d(${a}, ${b}, ${c}, ${d}deg)`;
 
 export const perspective = (
   a: CSSValue

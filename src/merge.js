@@ -1,5 +1,5 @@
 // flow
-import type { Animation, Keyframe, CSSValue } from './types';
+import type { Animation, CSSValue } from './types';
 
 
 type FrameMap = {
@@ -14,7 +14,7 @@ const defaultNormalizedFrames: FrameMap = {
   '0%': 'from',
   'to': 'to',
   '100%': 'to',
-}
+};
 
 /**
  * Merge lets you take two Animations and merge them together. It
@@ -127,7 +127,7 @@ export default function merge(
         merged[frame] = target;
       }
     }
-  };
+  }
 
   return merged;
 }
@@ -159,7 +159,7 @@ function mergeTransforms(transforms: Array<string>): string {
  * @private
  */
 function getDefined(primary: CSSValue, secondary: CSSValue): CSSValue {
-  return typeof primary !== 'undefined' ? primary : secondary
+  return typeof primary !== 'undefined' ? primary : secondary;
 }
 
 /**
