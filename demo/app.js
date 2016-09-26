@@ -1,8 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Radium, { Style, StyleRoot } from "radium";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Radium, { Style, StyleRoot } from 'radium';
 import * as animations from '../lib';
-import merge from '../lib/merge';
 
 import Demo from './demo';
 
@@ -11,49 +10,47 @@ const styles = {
     textAlign: 'center',
     paddingTop: 200,
     body: {
-      backgroundColor: 'white',
-      color: 'white',
-      fontFamily: "Whitney SSm A, Whitney SSm B, Helvetica Neue, Helvetica, Arial, sans-serif",
+      backgroundColor: '#e7e5e3',
+      fontFamily: 'Whitney SSm A, Whitney SSm B, Helvetica Neue, Helvetica, Arial, sans-serif',
       lineHeight: 1.5,
       margin: 0,
       transform: 'translate3d(0, 0, 0)',
-   },
-   p: {
-     margin: 0,
-     color: '#242121'
-   },
-   select: {
-     backgroundColor: '#e7e5e3',
-     border: 'none',
-     height: 35,
-     fontSize: 15,
-     fontFamily: 'inherit',
-     width: 155,
-     fontWeight: 'bold',
-   },
-   input: {
-     backgroundColor: '#e7e5e3',
-     height: 35,
-     border: 'none',
-     padding: '0px 5px',
-     borderRadius: 6,
-     fontFamily: 'inherit'
-   },
-   button: {
-     backgroundColor: '#e7e5e3',
-     outline: 'none',
-     backgroundColor: 'white',
-     height: 35,
-     border: 'none',
-     padding: '0px 10px',
-     borderRadius: 6,
-     fontFamily: 'inherit'
-   },
-   label: {
-     position: 'absolute',
-     bottom: 0,
-     fontSize: 10,
-   },
+    },
+    p: {
+      margin: 0,
+      color: '#242121'
+    },
+    select: {
+      border: 'none',
+      height: 35,
+      fontSize: 15,
+      fontFamily: 'inherit',
+      width: 155,
+      fontWeight: 'bold',
+    },
+    input: {
+      height: 35,
+      width: 50,
+      border: 'none',
+      padding: '0px 5px',
+      borderRadius: 6,
+      fontFamily: 'inherit'
+    },
+    button: {
+      backgroundColor: 'white',
+      outline: 'none',
+      height: 35,
+      border: 'none',
+      padding: '0px 10px',
+      borderRadius: 6,
+      fontFamily: 'inherit'
+    },
+    label: {
+      color: '#242121',
+      position: 'absolute',
+      bottom: 0,
+      fontSize: 10,
+    },
   },
   container: {
     position: 'relative',
@@ -95,7 +92,7 @@ class App extends React.Component {
     this.state = {
       animation: 'bounce',
       library: 'Radium',
-    }
+    };
     this.duration = 1;
     this.selectAnimation = this.selectAnimation.bind(this);
     this.onDurationChange = this.onDurationChange.bind(this);
@@ -115,13 +112,12 @@ class App extends React.Component {
   triggerAnimation() {
     const { animation } = this.state;
     this.setState({ animation: '' }, () => {
-      this.setState({ animation })
-    })
+      this.setState({ animation });
+    });
   }
 
   render() {
     const { animation } = this.state;
-    console.log('render')
     return (
       <StyleRoot>
         <div style={styles.global}>
@@ -149,7 +145,7 @@ class App extends React.Component {
           Duration
         </label>
         <input
-          value={this.state.duration}
+          defaultValue='1'
           onChange={this.onDurationChange}
           id='duration'
           style={styles.duration}
@@ -164,10 +160,10 @@ class App extends React.Component {
         </div>
         </div>
       </StyleRoot>
-    )
+    );
   }
 }
 
 const Wrapper = Radium(App);
 
-ReactDOM.render(<Wrapper/>, document.getElementById("content"));
+ReactDOM.render(<Wrapper/>, document.getElementById('content'));
