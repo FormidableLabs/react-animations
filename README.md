@@ -16,7 +16,7 @@ import { fadeIn } from 'react-animations'
 or you can import a specific animation directly
 
 ```js
-import fadeIn from 'react-animations/fadeIn'
+import fadeIn from 'react-animations/lib/fadeIn'
 ```
 
 
