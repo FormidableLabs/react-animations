@@ -7,8 +7,7 @@ module.exports = {
         "jest": true,
     },
     "extends": [
-      "eslint:recommended",
-      "plugin:flowtype/recommended"
+      "formidable/configurations/es6"
     ],
     "parserOptions": {
         "sourceType": "module"
@@ -17,21 +16,20 @@ module.exports = {
       "flowtype"
     ],
     "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+      "no-magic-numbers": [
+        "off"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "max-params": [
+        "error",
+        4
+      ]
     }
 };

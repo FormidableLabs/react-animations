@@ -35,7 +35,7 @@ const lightSpeedIn: Animation = {
     ...easeIn,
     transform: 'none',
     opacity: 1,
-  }
+  },
 };
 
 export default lightSpeedIn;

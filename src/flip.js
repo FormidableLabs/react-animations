@@ -4,7 +4,7 @@ import {
   perspective,
   rotate3d,
   translate3d,
-  scale3d
+  scale3d,
 } from './utils';
 import type { Animation } from './types';
 
@@ -54,7 +54,7 @@ const flip: Animation = {
   },
   to: {
     animationTimingFunction: 'ease-in',
-    transform:  perspective('400px'),
+    transform: perspective('400px'),
   },
 };
 

@@ -27,7 +27,7 @@ const hinge: Animation = {
   to: {
     transform: translate3d(0, '700px', 0),
     opacity: 0,
-  }
+  },
 };
 
 export default hinge;

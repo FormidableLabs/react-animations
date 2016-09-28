@@ -47,7 +47,7 @@ const bounce: Animation = {
   '90%': {
     transform: translate3d(0, '-4px', 0),
   },
-  '100%': base
+  '100%': base,
 };
 
 export default bounce;
