@@ -23,13 +23,11 @@ module.exports = {
         "error",
         "single"
       ],
-      "comma-dangle": [
-        "error",
-        "always-multiline"
-      ],
       "max-params": [
         "error",
         4
-      ]
+      ],
+      "filenames/match-regex": ["error", "^[a-z0-9\\-\\.]+$", true],
+      "filenames/match-exported": "error",
     }
 };
