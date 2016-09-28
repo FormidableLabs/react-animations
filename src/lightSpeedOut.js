@@ -9,19 +9,19 @@ const translateAndSkew = compose(
 );
 
 const easeIn: Keyframe = {
-  animationTimingFunction: 'ease-out',
+  animationTimingFunction: 'ease-out'
 };
 
 const lightSpeedOut: Animation = {
   from: {
     ...easeIn,
-    opacity: 1,
+    opacity: 1
   },
   to: {
     ...easeIn,
     transform: translateAndSkew(['100%', 0, 0], 30),
-    opacity: 0,
-  },
+    opacity: 0
+  }
 };
 
 export default lightSpeedOut;

@@ -21,7 +21,7 @@ export bounceInRight from './bounceInRight';
 export bounceInUp from './bounceInUp';
 
 /* Bouncing  exits */
-export bounceOut from './bouceOut';
+export bounceOut from './bounceOut';
 export bounceOutDown from './bounceOutDown';
 export bounceOutLeft from './bounceOutLeft';
 export bounceOutRight from './bounceOutRight';

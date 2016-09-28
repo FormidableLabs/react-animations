@@ -2,11 +2,11 @@
 import type { Keyframe, Animation } from './types';
 
 const visible: Keyframe = {
-  opacity: 1,
+  opacity: 1
 };
 
 const invisible: Keyframe = {
-  opacity: 0,
+  opacity: 0
 };
 
 const flash: Animation = {
@@ -14,7 +14,7 @@ const flash: Animation = {
   '25%': invisible,
   '50%': visible,
   '75%': invisible,
-  to: visible,
+  to: visible
 };
 
 export default flash;

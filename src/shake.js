@@ -3,15 +3,15 @@ import { translate3d } from './utils';
 import type { Animation, Keyframe } from './types';
 
 const noShake: Keyframe = {
-  transform: translate3d(0, 0, 0),
+  transform: translate3d(0, 0, 0)
 };
 
 const downShake: Keyframe = {
-  transform: translate3d('-10px', 0, 0),
+  transform: translate3d('-10px', 0, 0)
 };
 
 const upShake: Keyframe = {
-  transform: translate3d('10px', 0, 0),
+  transform: translate3d('10px', 0, 0)
 };
 
 const shake: Animation = {
@@ -25,7 +25,7 @@ const shake: Animation = {
   '70%': downShake,
   '80%': upShake,
   '90%': downShake,
-  to: noShake,
+  to: noShake
 };
 
 export default shake;

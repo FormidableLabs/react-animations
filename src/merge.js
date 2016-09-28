@@ -13,7 +13,7 @@ const defaultNormalizedFrames: FrameMap = {
   'from': 'from',
   '0%': 'from',
   'to': 'to',
-  '100%': 'to',
+  '100%': 'to'
 };
 
 /**
@@ -71,9 +71,9 @@ const normalizeFrames = function normalizeFrames(
 ): Animation {
   const normalized: Animation = {};
   for (const frame in source) {
-    const normalizedFrame = defaultNormalizedFrames[frame] || Math.round(
+    const normalizedFrame = defaultNormalizedFrames[frame] || `${Math.round(
       parseFloat(frame) / keyframeDistance
-    ) * keyframeDistance + '%';
+    ) * keyframeDistance }%`;
     normalized[normalizedFrame] = source[frame];
     cache[normalizedFrame] = normalizedFrame;
   }
@@ -95,7 +95,7 @@ const mergeFrames = function mergeFrames(
       if (secondaryFrame[propertyName]) {
         const newTransform = mergeTransforms([
           primaryFrame[propertyName],
-          secondaryFrame[propertyName],
+          secondaryFrame[propertyName]
         ]);
         // We make the assumption that animations use 'transform: none'
         // to terminate the keyframe. If we're combining two animations
