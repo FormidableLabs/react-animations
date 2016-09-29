@@ -4,8 +4,7 @@ module.exports = {
         "es6": true
     },
     "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended"
+      "formidable/configurations/es6"
     ],
     "parserOptions": {
         "ecmaFeatures": {

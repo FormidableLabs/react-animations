@@ -3,7 +3,7 @@ import {
   compose,
   scale3d,
   translate3d,
-  cubicBezier,
+  cubicBezier
 } from './utils';
 import type { Animation } from './types';
 
@@ -21,7 +21,7 @@ const zoomInDown: Animation = {
       0.055,
       0.675,
       0.190
-    ),
+    )
   },
   '60%': {
     opacity: 1,
@@ -34,8 +34,8 @@ const zoomInDown: Animation = {
       0.885,
       0.320,
       1
-    ),
-  },
+    )
+  }
 };
 
 export default zoomInDown;

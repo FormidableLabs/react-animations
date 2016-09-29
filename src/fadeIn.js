@@ -3,11 +3,11 @@ import type { Animation } from './types';
 
 const fadeIn: Animation = {
   from: {
-    opacity: 0,
+    opacity: 0
   },
   to: {
-    opacity: 1,
-  },
+    opacity: 1
+  }
 };
 
 export default fadeIn;

@@ -9,7 +9,7 @@ const translateAndSkew = compose(
 );
 
 const easeIn: Keyframe = {
-  animationTimingFunction: 'ease-out',
+  animationTimingFunction: 'ease-out'
 };
 
 const lightSpeedIn: Animation = {
@@ -19,22 +19,22 @@ const lightSpeedIn: Animation = {
     transform: translateAndSkew(
       ['100%', 0, 0],
       -30
-    ),
+    )
   },
   '60%': {
     ...easeIn,
     opacity: 1,
-    transform: skewX(20),
+    transform: skewX(20)
   },
   '80%': {
     ...easeIn,
     opacity: 1,
-    transform: skewX(-5),
+    transform: skewX(-5)
   },
   to: {
     ...easeIn,
     transform: 'none',
-    opacity: 1,
+    opacity: 1
   }
 };
 

@@ -10,12 +10,12 @@ const rollIn: Animation = {
     transform: translateAndRotate(
       ['-100%', 0, 0],
       [0, 0, 1, -120]
-    ),
+    )
   },
   to: {
     opacity: 1,
-    transform: 'none',
-  },
+    transform: 'none'
+  }
 };
 
 export default rollIn;

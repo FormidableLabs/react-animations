@@ -3,7 +3,7 @@ import {
   compose,
   scale3d,
   scale,
-  translate3d,
+  translate3d
 } from './utils';
 import type { Animation } from './types';
 
@@ -16,7 +16,7 @@ const zoomOutRight: Animation = {
     transform: scale3dAndTranslate(
       [0.475, 0.475, 0.475],
       ['-42px', 0, 0]
-    ),
+    )
   },
   to: {
     opacity: 0,
@@ -24,8 +24,8 @@ const zoomOutRight: Animation = {
       0.1,
       ['2000px', 0, 0]
     ),
-    transformOrigin: 'right center',
-  },
+    transformOrigin: 'right center'
+  }
 };
 
 export default zoomOutRight;
