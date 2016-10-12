@@ -7,100 +7,100 @@ export flash from './flash';
 export pulse from './pulse';
 export jello from './jello';
 export wobble from './wobble';
-export headShake from './headShake';
-export rubberBand from './rubberBand';
+export headShake from './head-shake';
+export rubberBand from './rubber-band';
 export shake from './shake';
 export swing from './swing';
 export tada from './tada';
 
 /* Bouncing entrances */
-export bounceIn from './bounceIn';
-export bounceInDown from './bounceInDown';
-export bounceInLeft from './bounceInLeft';
-export bounceInRight from './bounceInRight';
-export bounceInUp from './bounceInUp';
+export bounceIn from './bounce-in';
+export bounceInDown from './bounce-in-down';
+export bounceInLeft from './bounce-in-left';
+export bounceInRight from './bounce-in-right';
+export bounceInUp from './bounce-in-up';
 
 /* Bouncing  exits */
-export bounceOut from './bounceOut';
-export bounceOutDown from './bounceOutDown';
-export bounceOutLeft from './bounceOutLeft';
-export bounceOutRight from './bounceOutRight';
-export bounceOutUp from './bounceOutUp';
+export bounceOut from './bounce-out';
+export bounceOutDown from './bounce-out-down';
+export bounceOutLeft from './bounce-out-left';
+export bounceOutRight from './bounce-out-right';
+export bounceOutUp from './bounce-out-up';
 
 /* Fading entrances */
-export fadeIn from './fadeIn';
-export fadeInDown from './fadeInDown';
-export fadeInDownBig from './fadeInDownBig';
-export fadeInLeft from './fadeInLeft';
-export fadeInLeftBig from './fadeInLeftBig';
-export fadeInRight from './fadeInRight';
-export fadeInRightBig from './fadeInRightBig';
-export fadeInUp from './fadeInUp';
-export fadeInUpBig from './fadeInUpBig';
+export fadeIn from './fade-in';
+export fadeInDown from './fade-in-down';
+export fadeInDownBig from './fade-in-down-big';
+export fadeInLeft from './fade-in-left';
+export fadeInLeftBig from './fade-in-left-big';
+export fadeInRight from './fade-in-right';
+export fadeInRightBig from './fade-in-right-big';
+export fadeInUp from './fade-in-up';
+export fadeInUpBig from './fade-in-up-big';
 
 /* Fading exits */
-export fadeOut from './fadeOut';
-export fadeOutDown from './fadeOutDown';
-export fadeOutDownBig from './fadeOutDownBig';
-export fadeOutLeft from './fadeOutLeft';
-export fadeOutLeftBig from './fadeOutLeftBig';
-export fadeOutRight from './fadeOutRight';
-export fadeOutRightBig from './fadeOutRightBig';
-export fadeOutUp from './fadeOutUp';
-export fadeOutUpBig from './fadeOutUpBig';
+export fadeOut from './fade-out';
+export fadeOutDown from './fade-out-down';
+export fadeOutDownBig from './fade-out-down-big';
+export fadeOutLeft from './fade-out-left';
+export fadeOutLeftBig from './fade-out-left-big';
+export fadeOutRight from './fade-out-right';
+export fadeOutRightBig from './fade-out-right-big';
+export fadeOutUp from './fade-out-up';
+export fadeOutUpBig from './fade-out-up-big';
 
 /* Flippers */
 export flip from './flip';
-export flipInX from './flipInX';
-export flipInY from './flipInY';
-export flipOutX from './flipOutX';
-export flipOutY from './flipOutY';
+export flipInX from './flip-in-x';
+export flipInY from './flip-in-y';
+export flipOutX from './flip-out-x';
+export flipOutY from './flip-out-y';
 
 /* Lightspeed */
-export lightSpeedIn from './lightSpeedIn';
-export lightSpeedOut from './lightSpeedOut';
+export lightSpeedIn from './light-speed-in';
+export lightSpeedOut from './light-speed-out';
 
 /* Rotating entrances */
-export rotateIn from './rotateIn';
-export rotateInDownLeft from './rotateInDownLeft';
-export rotateInDownRight from './rotateInDownRight';
-export rotateInUpLeft from './rotateInUpLeft';
-export rotateInUpRight from './rotateInUpRight';
+export rotateIn from './rotate-in';
+export rotateInDownLeft from './rotate-in-down-left';
+export rotateInDownRight from './rotate-in-down-right';
+export rotateInUpLeft from './rotate-in-up-left';
+export rotateInUpRight from './rotate-in-up-right';
 
 /* Rotation exits */
-export rotateOut from './rotateOut.js';
-export rotateOutDownLeft from './rotateOutDownLeft.js';
-export rotateOutDownRight from './rotateOutDownRight.js';
-export rotateOutUpLeft from './rotateOutUpLeft.js';
-export rotateOutUpRight from './rotateOutUpRight.js';
+export rotateOut from './rotate-out';
+export rotateOutDownLeft from './rotate-out-down-left';
+export rotateOutDownRight from './rotate-out-down-right';
+export rotateOutUpLeft from './rotate-out-up-left';
+export rotateOutUpRight from './rotate-out-up-right';
 
 /* Sliding entrances */
-export slideInDown from './slideInDown';
-export slideInLeft from './slideInLeft';
-export slideInRight from './slideInRight';
-export slideInUp from './slideInUp';
+export slideInDown from './slide-in-down';
+export slideInLeft from './slide-in-left';
+export slideInRight from './slide-in-right';
+export slideInUp from './slide-in-up';
 
 /* Sliding exits */
-export slideOutDown from './slideOutDown';
-export slideOutLeft from './slideOutLeft';
-export slideOutRight from './slideOutRight';
-export slideOutUp from './slideOutUp';
+export slideOutDown from './slide-out-down';
+export slideOutLeft from './slide-out-left';
+export slideOutRight from './slide-out-right';
+export slideOutUp from './slide-out-up';
 
 /* Specials */
 export hinge from './hinge';
-export rollIn from './rollIn';
-export rollOut from './rollOut';
+export rollIn from './roll-in';
+export rollOut from './roll-out';
 
 /* Zooming entrances */
-export zoomIn from './zoomIn';
-export zoomInDown from './zoomInDown';
-export zoomInLeft from './zoomInLeft';
-export zoomInRight from './zoomInRight';
-export zoomInUp from './zoomInUp';
+export zoomIn from './zoom-in';
+export zoomInDown from './zoom-in-down';
+export zoomInLeft from './zoom-in-left';
+export zoomInRight from './zoom-in-right';
+export zoomInUp from './zoom-in-up';
 
 /* Zooming exits */
-export zoomOut from './zoomOut';
-export zoomOutDown from './zoomOutDown';
-export zoomOutLeft from './zoomOutLeft';
-export zoomOutRight from './zoomOutRight';
-export zoomOutUp from './zoomOutUp';
+export zoomOut from './zoom-out';
+export zoomOutDown from './zoom-out-down';
+export zoomOutLeft from './zoom-out-left';
+export zoomOutRight from './zoom-out-right';
+export zoomOutUp from './zoom-out-up';
