@@ -48,6 +48,24 @@ const styles = StyleSheet.create({
 })
 ```
 
+### Usage with JSS
+
+```js
+import { bounce } from 'react-animations';
+import jss from 'jss'
+import preset from 'jss-preset-default'
+
+jss.setup(preset())
+
+const {classes} = jss.createStyleSheet({
+  '@keyframes bounce': bounce,
+  bounce: {
+    animationName: 'bounce',
+    animationDuration: '1s',
+  },
+}).attach()
+```
+
 ## Animations
 
 Below is a list of all available animations
