@@ -47,6 +47,9 @@ class Test extends React.Component {
 
 **Notice: [ `<StyleRoot>` Component](https://github.com/FormidableLabs/radium/tree/master/docs/api#styleroot-component) is necessary if you want to use `radium`, if not, animations won't work**
 
+> Usually wrapped around your top-level App component. StyleRoot wraps its children in a plain div followed by the root style sheet. Radium plugins, like keyframes and media queries, use this style sheet to inject CSS at runtime. Because the style sheet appears after your rendered elements, it is populated correctly during a server render.
+
+
 ### Usage with Aphrodite
 
 ```js
