@@ -23,8 +23,9 @@ import fadeIn from 'react-animations/lib/fade-in'
 ### Usage with Radium
 
 ```js
+import React from 'react';
 import { bounce } from 'react-animations';
-import Radium from 'radium';
+import Radium, {StyleRoot} from 'radium';
 
 const styles = {
   bounce: {
@@ -32,7 +33,19 @@ const styles = {
     animationName: Radium.keyframes(bounce, 'bounce')
   }
 }
+
+class Test extends React.Component {
+  render() {
+    <StyleRoot>
+      <div className="test" style={styles.bounce}>
+      </div>
+    </StyleRoot>
+  }
+}
+
 ```
+
+**Notice: [ `<StyleRoot>` Component](https://github.com/FormidableLabs/radium/tree/master/docs/api#styleroot-component) is necessary if you want to use `radium`, if not, animations won't work**
 
 ### Usage with Aphrodite
 
