@@ -66,6 +66,19 @@ const {classes} = jss.createStyleSheet({
 }).attach()
 ```
 
+### Usage with `styled-components`
+
+```js
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
+
+const bounceAnimation = keyframes`${bounce}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
+```
+
 ## Animations
 
 Below is a list of all available animations
