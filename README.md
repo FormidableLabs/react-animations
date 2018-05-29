@@ -20,7 +20,7 @@ import fadeIn from 'react-animations/lib/fade-in'
 ```
 
 
-### Usage with Radium
+### Usage with [Radium](https://github.com/FormidableLabs/radium)
 
 ```js
 import React from 'react';
@@ -45,7 +45,7 @@ class Test extends React.Component {
 
 ```
 
-### Usage with Aphrodite
+### Usage with [Aphrodite](https://github.com/Khan/aphrodite)
 
 ```js
 import { bounce } from 'react-animations';
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 })
 ```
 
-### Usage with JSS
+### Usage with [JSS](https://github.com/cssinjs/react-jss)
 
 ```js
 import { bounce } from 'react-animations';
