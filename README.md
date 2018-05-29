@@ -77,7 +77,7 @@ const {classes} = jss.createStyleSheet({
 }).attach()
 ```
 
-### Usage with `styled-components`
+### Usage with [`styled-components`](https://github.com/styled-components/styled-components)
 
 ```js
 import styled, { keyframes } from 'styled-components';
