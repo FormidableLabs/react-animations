@@ -90,6 +90,33 @@ const BouncyDiv = styled.div`
 `;
 ```
 
+### Usage with `fela-js`
+
+```js
+import React from 'react';
+import { render } from 'react-dom';
+import { createRenderer } from 'fela';
+import { createComponent, Provider } from 'react-fela';
+import { bounce } from 'react-animations';
+
+const mapStylesToProps = ({ background, height, width }, renderer) => ({
+	animationName: renderer.renderKeyframe(() => bounce, {}),
+	animationDuration: '2s',
+	background,
+	height,
+	width,
+});
+
+const BouncingDiv = createComponent(mapStylesToProps, 'div');
+
+render(
+	<Provider renderer={createRenderer()}>
+		<BouncingDiv background="red" height="100px" width="100px" />
+	</Provider>,
+	document.getElementById('root'),
+);
+```
+
 ## Animations
 
 Below is a list of all available animations
