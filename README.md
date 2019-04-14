@@ -11,6 +11,10 @@ A collection of animations that can be used with any inline style library that s
   <a href="https://bit.dev/formidablelabs/react-animations"><img src="https://i.imagesup.co/images2/1934ceb412dc8bf060b488ba037d7302a8a64087.gif"></a>
 </p>
 
+### Maintenance Status: Stable
+
+Formidable is not planning to develop any new features for this project. We are still responding to bug reports and security concerns. We are still welcoming PRs for this project, but PRs that include new features should be small and easy to integrate and should not include breaking changes.
+
 ### Usage
 
 You can import each animation directly from the main package
