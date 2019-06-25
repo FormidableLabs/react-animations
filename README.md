@@ -129,7 +129,7 @@ render(
 
 Below is a list of all available animations
 
-`bouceOut`
+`bounceOut`
 
 `bounce`
 
