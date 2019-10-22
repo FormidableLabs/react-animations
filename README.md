@@ -98,7 +98,7 @@ const BouncyDiv = styled.div`
 `;
 ```
 
-### Usage with `fela-js`
+### Usage with [`fela-js`](https://github.com/robinweser/fela)
 
 ```js
 import React from 'react';
