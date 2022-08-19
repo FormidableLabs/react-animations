@@ -16,6 +16,10 @@
     "clean-dist": "rimraf dist && mkdir dist",
     "demo": "node demo/server"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FormidableLabs/react-animations.git"
+  },
   "keywords": [
     "react",
     "animation",
