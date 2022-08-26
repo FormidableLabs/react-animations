@@ -13,6 +13,16 @@ A collection of animations that can be used with any inline style library that s
   <a href="https://bit.dev/formidablelabs/react-animations"><img src="https://i.imagesup.co/images2/1934ceb412dc8bf060b488ba037d7302a8a64087.gif"></a>
 </p>
 
+### Installation
+
+```bash
+npm install react-animations --save
+```
+or
+```bash
+yarn install react-animations
+```
+
 ### Usage
 
 You can import each animation directly from the main package
